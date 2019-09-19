@@ -70,9 +70,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-function reversedLooper (family){
-  for(let i=family.length-1; i>=0; i--){
-    alert(family[i])}
+function reversedLooper (letters){
+  for(let i=letters.length-1; i>=0; i--){
+    alert(letters[i])}
 
 }
 
@@ -127,7 +127,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider(numbersArray){
+let evensArray = [];
+let oddsArray =[];
+
+for(let i=0; i< numbersArray.length; i++){
+  if (numbersArray[i] % 2 === 0){
+    evensArray.push(numbersArray[i])
+  } else { 
+    oddsArray.push(numbersArray[i])
+
+  }
+}
+  return[evensArray, oddsArray]
+}
 
 
 
